@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
-import Header from '../components/Header';
 import Image from 'next/image';
 
 export default function Home() {
@@ -24,21 +23,21 @@ export default function Home() {
             <Head>
         <title>Créateur de Sites Web - Fanatsy</title>
         <meta name="description" content="Création de sites web modernes et optimisés pour le SEO. Découvrez mes créations et contactez-moi !" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
       </Head>
       
-      <Header />
+  
       
-      <main className="flex-1 min-h-screen flex flex-col items-center">
+      <main className="flex-1 min-h-screen flex flex-col items-center px-4 sm:px-6 md:px-8">
         <div className="w-full flex flex-col items-center pt-10">
-          <video className="rounded-full object-cover lg:h-[400px] h-[250px] md:h-[300px] shadow-lg" autoPlay muted playsInline>
+          <video className="rounded-full object-cover lg:h-[400px] h-[200px] md:h-[300px] sm:h-[250px] shadow-lg" autoPlay muted playsInline>
             <source src="/video/intro.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
         
-        <div className="w-full flex flex-col lg:flex-row justify-center items-center gap-10 px-12 mt-16 opacity-0 animate-fade-in">
-        <div className="bg-gradient-to-r from-[#1b3a2b] to-[#265642] p-6 rounded-lg shadow-lg w-96 text-center">
+        <div className="w-full flex flex-col lg:flex-row justify-center items-center gap-10 px-4 sm:px-6 md:px-12 mt-16 opacity-0 animate-fade-in">
+        <div className="bg-gradient-to-r from-[#1b3a2b] to-[#265642] p-6 rounded-lg shadow-lg sm:w-96 text-center">
             <h2 className="text-3xl font-bold text-white">Boostez votre présence en ligne</h2>
             <p className="text-gray-300 mt-4">
               Création de sites web performants, modernes et optimisés pour le référencement.
@@ -46,7 +45,7 @@ export default function Home() {
             </p>
           </div>
           
-          <div className="bg-gradient-to-r from-[#1b4332] to-[#2d6a4f] p-6 rounded-lg shadow-lg w-96 text-center">
+          <div className="bg-gradient-to-r from-[#1b4332] to-[#2d6a4f] p-6 rounded-lg shadow-lg sm:w-96 text-center">
             <h2 className="text-3xl font-bold text-white">Services professionnels</h2>
             <p className="text-gray-300 mt-4">
               - Développement personnalisé<br/>
@@ -74,7 +73,7 @@ export default function Home() {
           </div>
         </section>
         
-        <section className="w-full py-20 text-center mt-16 px-6">
+        <section className="w-full py-20 text-center mt-8 px-6">
           <div className="bg-gradient-to-r from-[#14532d] to-[#1e3a2f] p-10 rounded-lg shadow-lg w-3/4 mx-auto flex flex-col items-center">
             <Image src="/idea.webp" alt="idea image" width={250} height={250} className="mb-6 opacity-90 rounded-lg" priority />
             <h2 className="text-4xl font-bold text-white">Une idée, un projet ?</h2>
