@@ -1,114 +1,102 @@
-import Image from "next/image";
-import { Geist, Geist_Mono } from "next/font/google";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import Head from 'next/head';
+import Link from 'next/link';
+import { useEffect, useRef, useState } from 'react';
+import Image from 'next/image';
 
 export default function Home() {
-  return (
-    <div
-      className={`${geistSans.variable} ${geistMono.variable} grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]`}
-    >
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              pages/index.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+  const [isVisible, setIsVisible] = useState(false);
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      if (scrollPosition > 500) {
+        setIsVisible(true);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+  
+  return (
+    <div className="bg-gradient-to-b from-[#252525] via-[#18332a] to-[#2d655b] min-h-screen text-white">
+            <Head>
+        <title>Créateur de Sites Web - Fanatsy</title>
+        <meta name="description" content="Création de sites web modernes et optimisés pour le SEO. Découvrez mes créations et contactez-moi !" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
+      
+      <header className="bg-[#1a1a1a] shadow-md p-6 flex justify-between items-center">
+        <img src="/intro.gif" alt="Logo" className="h-12" />
+        <nav className="space-x-6">
+          <Link href="/portfolio" className="text-gray-300 hover:text-green-400">Portfolio</Link>
+          <Link href="/services" className="text-gray-300 hover:text-green-400">Services</Link>
+          <Link href="/contact" className="text-gray-300 hover:text-green-400">Contact</Link>
+        </nav>
+      </header>
+      
+      <main className="flex-1 min-h-screen flex flex-col items-center">
+        <div className="w-full flex flex-col items-center pt-10">
+          <video className="rounded-full object-cover lg:h-[400px] h-[250px] md:h-[300px] shadow-lg" autoPlay muted playsInline>
+            <source src="/video/intro.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
+        
+        <div className="w-full flex flex-col lg:flex-row justify-center items-center gap-10 px-12 mt-16 opacity-0 animate-fade-in">
+        <div className="bg-gradient-to-r from-[#1b3a2b] to-[#265642] p-6 rounded-lg shadow-lg w-96 text-center">
+            <h2 className="text-3xl font-bold text-white">Boostez votre présence en ligne</h2>
+            <p className="text-gray-300 mt-4">
+              Création de sites web performants, modernes et optimisés pour le référencement.
+              Maximisez votre impact digital dès aujourd'hui !
+            </p>
+          </div>
+          
+          <div className="bg-gradient-to-r from-[#1b4332] to-[#2d6a4f] p-6 rounded-lg shadow-lg w-96 text-center">
+            <h2 className="text-3xl font-bold text-white">Services professionnels</h2>
+            <p className="text-gray-300 mt-4">
+              - Développement personnalisé<br/>
+              - Référencement avancé<br/>
+              - Sécurité et rapidité optimales
+            </p>
+          </div>
+        </div>
+        
+        <section className={`w-full py-20 text-center mt-16 px-6 transition-opacity duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          <h2 className="text-4xl font-bold text-white mb-6">Mes engagements</h2>
+          <div className="flex flex-wrap justify-center gap-6">
+            <div className="bg-gradient-to-r from-[#1b4332] to-[#2d6a4f] p-6 rounded-lg shadow-lg w-80">
+              <h3 className="text-xl font-bold text-white">Innovation et Créativité</h3>
+              <p className="text-gray-300 mt-2">Des designs uniques et modernes adaptés à votre image.</p>
+            </div>
+            <div className="bg-gradient-to-r from-[#1b4332] to-[#2d6a4f] p-6 rounded-lg shadow-lg w-80">
+              <h3 className="text-xl font-bold text-white">Visibilité Maximale</h3>
+              <p className="text-gray-300 mt-2">Un référencement naturel amélioré pour plus de trafic.</p>
+            </div>
+            <div className="bg-gradient-to-r from-[#1b4332] to-[#2d6a4f] p-6 rounded-lg shadow-lg w-80">
+              <h3 className="text-xl font-bold text-white">Sécurité et Performance</h3>
+              <p className="text-gray-300 mt-2">Des sites rapides et sécurisés pour une meilleure expérience utilisateur.</p>
+            </div>
+          </div>
+        </section>
+        
+        <section className="w-full py-20 text-center mt-16 px-6">
+          <div className="bg-gradient-to-r from-[#14532d] to-[#1e3a2f] p-10 rounded-lg shadow-lg w-3/4 mx-auto flex flex-col items-center">
+            <Image src="/idea.webp" alt="Logo" width={250} height={250} className="mb-6 opacity-90 rounded-lg" />
+            <h2 className="text-4xl font-bold text-white">Une idée, un projet ?</h2>
+            <p className="text-gray-200 mt-4 text-lg">Discutons ensemble et transformons vos idées en réalité digitale.</p>
+            <Link href="/contact" className="mt-6 inline-block bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-green-700 transition">
+              Contactez-moi
+            </Link>
+          </div>
+        </section>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+
+      <footer className="bg-gray-900 text-white p-6 text-center mt-10">
+        <p>&copy; 2025 - Fanatsy</p>
+        <Link href="https://malt.fr/profil-tonnom" target="_blank" className="text-green-400 hover:text-green-300">Me contacter sur Malt</Link>
       </footer>
     </div>
   );
 }
+
