@@ -29,7 +29,7 @@ export default function Header() {
             </Link>
              {/* Desktop Navigation */}
             <nav className="hidden md:flex space-x-6 sm:space-x-12 m-4 text-lg font-semibold text-white">
-                <Link href="/portfolio" className="hover:text-green-400 transition-colors">Portfolio</Link>
+                <Link href="/réalisations" className="hover:text-green-400 transition-colors">Réalisations</Link>
                 <Link href="/services" className="hover:text-green-400 transition-colors">Services</Link>
                 <Link href="/contact" className="hover:text-green-400 transition-colors">Contact</Link>
             </nav>
@@ -53,7 +53,7 @@ export default function Header() {
                     <FiX />
                 </button>
                 <nav className="flex flex-col space-y-6 text-2xl font-semibold text-white">
-                    <Link href="/portfolio" className="hover:text-green-400 transition-colors" onClick={() => setMenuOpen(false)}>Portfolio</Link>
+                    <Link href="/réalisations" className="hover:text-green-400 transition-colors" onClick={() => setMenuOpen(false)}>Réalisations</Link>
                     <Link href="/services" className="hover:text-green-400 transition-colors" onClick={() => setMenuOpen(false)}>Services</Link>
                     <Link href="/contact" className="hover:text-green-400 transition-colors" onClick={() => setMenuOpen(false)}>Contact</Link>
                 </nav>

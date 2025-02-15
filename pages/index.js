@@ -38,7 +38,7 @@ export default function Home() {
         
         <div className="w-full flex flex-col lg:flex-row justify-center items-center gap-10 px-4 sm:px-6 md:px-12 mt-16 opacity-0 animate-fade-in">
         <div className="bg-gradient-to-r from-[#1b3a2b] to-[#265642] p-6 rounded-lg shadow-lg sm:w-96 text-center">
-            <h2 className="text-3xl font-bold text-white">Boostez votre présence en ligne</h2>
+            <h1 className="text-3xl font-bold text-white">Boostez votre présence en ligne</h1>
             <p className="text-gray-300 mt-4">
               Création de sites web performants, modernes et optimisés pour le référencement.
               Maximisez votre impact digital dès aujourd'hui !
