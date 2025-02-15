@@ -31,7 +31,7 @@ export default function Header() {
             <nav className="hidden md:flex space-x-6 sm:space-x-12 m-4 text-lg font-semibold text-white">
                 <Link href="/réalisations" className="hover:text-green-400 transition-colors">Réalisations</Link>
                 <Link href="/services" className="hover:text-green-400 transition-colors">Services</Link>
-                <Link href="/contact" className="hover:text-green-400 transition-colors">Contact</Link>
+                <Link href="/contacte" className="hover:text-green-400 transition-colors">Contacte</Link>
             </nav>
 
             {/* Mobile Menu Button */}
@@ -55,7 +55,7 @@ export default function Header() {
                 <nav className="flex flex-col space-y-6 text-2xl font-semibold text-white">
                     <Link href="/réalisations" className="hover:text-green-400 transition-colors" onClick={() => setMenuOpen(false)}>Réalisations</Link>
                     <Link href="/services" className="hover:text-green-400 transition-colors" onClick={() => setMenuOpen(false)}>Services</Link>
-                    <Link href="/contact" className="hover:text-green-400 transition-colors" onClick={() => setMenuOpen(false)}>Contact</Link>
+                    <Link href="/contacte" className="hover:text-green-400 transition-colors" onClick={() => setMenuOpen(false)}>Contacte</Link>
                 </nav>
             </div>
         </header>

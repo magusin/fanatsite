@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import Header from 'C/components/Header';
 import Image from 'next/image';
 
 export default function Services() {
@@ -11,8 +10,6 @@ export default function Services() {
         <meta name="description" content="Découvrez mes services de création de sites web optimisés, responsives et bien référencés." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      
-      <Header />
       
       <main className="flex flex-col items-center text-center py-16 px-6">
         <h1 className="text-5xl font-bold text-gray-100 mb-8">Mes Services</h1>

@@ -9,7 +9,7 @@ export default function Home() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      if (scrollPosition > 400) {
+      if (scrollPosition > 300) {
         setIsVisible(true);
       }
     };
