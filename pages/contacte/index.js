@@ -2,7 +2,7 @@ import Head from 'next/head';
 
 export default function Contact() {
     return (
-      <div className="min-h-screen text-white">
+      <div className="min-h-screen text-white overflow-hidden">
         <Head>
           <title>Contact - Fanatsy</title>
           <meta name="description" content="Contactez-moi pour discuter de votre projet web." />
