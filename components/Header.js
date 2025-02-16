@@ -29,7 +29,7 @@ export default function Header() {
             </Link>
              {/* Desktop Navigation */}
             <nav className="hidden md:flex space-x-6 sm:space-x-12 m-4 text-lg font-semibold text-white">
-                <Link href="/réalisations" className="hover:text-green-400 transition-colors">Réalisations</Link>
+                <Link href="/realisations" className="hover:text-green-400 transition-colors">Réalisations</Link>
                 <Link href="/services" className="hover:text-green-400 transition-colors">Services</Link>
                 <Link href="/contacte" className="hover:text-green-400 transition-colors">Contacte</Link>
             </nav>

@@ -75,7 +75,7 @@ export default function Home() {
         
         <section className="w-full py-20 text-center mt-8 px-6">
           <div className="bg-gradient-to-r from-[#14532d] to-[#1e3a2f] p-10 rounded-lg shadow-lg w-3/4 mx-auto flex flex-col items-center">
-            <Image src="/idea.webp" alt="idea image" width={250} height={250} className="mb-6 opacity-90 rounded-lg" priority />
+            <Image src="/img/idea.webp" alt="idea image" width={250} height={250} className="mb-6 opacity-90 rounded-lg" priority />
             <h2 className="text-4xl font-bold text-white">Une idée, un projet ?</h2>
             <p className="text-gray-200 mt-4 text-lg">Discutons ensemble et transformons vos idées en réalité digitale.</p>
             <Link href="/contact" className="mt-6 inline-block bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-green-700 transition">
