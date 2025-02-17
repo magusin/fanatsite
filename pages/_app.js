@@ -1,6 +1,7 @@
 import "C/styles/globals.css";
 import Header from "C/components/Header";
 import Footer from "C/components/Footer";
+import Script from "next/script";
 
 export default function App({ Component, pageProps }) {
   return (
