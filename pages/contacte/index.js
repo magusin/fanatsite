@@ -1,13 +1,13 @@
-import Head from 'next/head';
+import SEOHead from "C/components/SEOHead";
 
 export default function Contact() {
     return (
       <div className="min-h-screen text-white overflow-hidden">
-        <Head>
-          <title>Contact - Fanatsy</title>
-          <meta name="description" content="Contactez-moi pour discuter de votre projet web." />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-        </Head>
+        <SEOHead 
+        title="Contacte"
+        description="Contactez-moi pour discuter de votre projet web."
+        url="https://fanatsy.dev/contacte"
+      />
         
         <main className="flex flex-col items-center text-center py-16 px-6">
           <h1 className="text-5xl font-bold text-gray-100 mb-8">Me Contacter</h1>

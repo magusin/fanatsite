@@ -1,5 +1,4 @@
-import Head from 'next/head';
-import Link from 'next/link';
+import SEOHead from 'C/components/SEOHead';
 import Image from 'next/image';
 
 const projects = [
@@ -10,7 +9,7 @@ const projects = [
   },
   {
     title: "NovaConnect",
-    image: "/img/projects/novaConnect-mockup.png",
+    image: "/img/projects/novaconnect-mockup.png",
     description: "Site d'entreprise",
   },
   {
@@ -33,11 +32,11 @@ const projects = [
 export default function Realisations() {
   return (
     <div className="min-h-screen text-white">
-      <Head>
-        <title>Réalisations - Fanatsy</title>
-        <meta name="description" content="Découvrez mes projets réalisés en développement web." />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
+      <SEOHead 
+        title="Réalisations"
+        description="Découvrez mes projets réalisés en développement web."
+        url="https://fanatsy.dev/realisations"
+      />
       
       <main className="flex flex-col items-center text-center py-16 px-6">
         <h1 className="text-5xl font-bold text-gray-100 mb-8">Réalisations</h1>

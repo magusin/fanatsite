@@ -1,15 +1,14 @@
-import Head from 'next/head';
-import Link from 'next/link';
+import SEOHead from 'C/components/SEOHead';
 import Image from 'next/image';
 
 export default function Services() {
   return (
     <div className="min-h-screen text-white">
-      <Head>
-        <title>Services - Fanatsy</title>
-        <meta name="description" content="Découvrez mes services de création de sites web optimisés, responsives et bien référencés." />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
+      <SEOHead 
+        title="Services"
+        description="Découvrez mes services de création de sites et applications web optimisés, responsives et bien référencés."
+        url="https://fanatsy.dev/services"
+      />
       
       <main className="flex flex-col items-center text-center py-16 px-6">
         <h1 className="text-5xl font-bold text-gray-100 mb-8">Mes Services</h1>
