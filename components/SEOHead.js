@@ -3,8 +3,8 @@ import Head from 'next/head';
 export default function SEOHead({ title, description, url }) {
   return (
     <Head>
-      <title>{title ? `${title} - Fanatsy` : "Fanatsy - Développeur Web"}</title>
-      <meta name="description" content={description || "Création de sites web modernes et optimisés pour le SEO. Découvrez mes services et contactez-moi !"} />
+      <title>{title ? `${title} - Fanatsy` : "Fanatsy - Développeur Web, création de site web et application"}</title>
+      <meta name="description" content={description || "Développeur web basé à Valdivienne, crée des sites web et application modernes et optimisés pour le SEO. Découvrez mes créations et contactez-moi !"} />
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
       
       {/* Open Graph / Réseaux sociaux */}
