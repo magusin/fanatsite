@@ -6,8 +6,9 @@ export default async function handler(req, res) {
   const links = [
     { url: '/', changefreq: 'daily', priority: 1.0 },
     { url: '/services', changefreq: 'weekly', priority: 0.8 },
-    { url: '/contact', changefreq: 'monthly', priority: 0.6 },
+    { url: '/contacte', changefreq: 'monthly', priority: 0.6 },
     { url: '/realisations', changefreq: 'weekly', priority: 0.7 },
+    { url: '/cgu', changefreq: 'monthly', priority: 0.5 },
   ];
 
   // Génération du sitemap
