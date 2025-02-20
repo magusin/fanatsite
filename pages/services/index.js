@@ -5,8 +5,8 @@ export default function Services() {
   return (
     <div className="min-h-screen text-white">
       <SEOHead 
-        title="Services"
-        description="Découvrez mes services de création de sites et applications web optimisés, responsives et bien référencés."
+        title="Fanatsy - Développeur Web | Services"
+        description="Fanatsy, Développeur web basé à Valdivienne (Vienne; Poitiers et alentours), créations de sites web et applications modernes, adaptatifs et optimisés pour le SEO. Découvrez mes services de création de sites et applications web optimisés, responsives et bien référencés."
         url="https://fanatsy.dev/services"
       />
       
@@ -29,7 +29,7 @@ export default function Services() {
             <div className="text-left">
               <p className="text-gray-300 text-xl">Des sites qui s’adaptent parfaitement aux mobiles, tablettes et ordinateurs pour une expérience optimale.</p>
             </div>
-            <Image src="/img/responsive-design.png" alt="Responsive design" width={350} height={300} className="rounded-lg mb-6 md:mb-0 md:ml-6" />
+            <Image src="/img/Responsive-design.png" alt="Responsive design" width={350} height={300} className="rounded-lg mb-6 md:mb-0 md:ml-6" />
           </div>
         </div>
         <div className="bg-gradient-to-r from-[#1b3a2b] to-[#265642] p-6 rounded-lg shadow-lg">

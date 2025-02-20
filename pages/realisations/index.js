@@ -33,8 +33,8 @@ export default function Realisations() {
   return (
     <div className="min-h-screen text-white">
       <SEOHead 
-        title="Réalisations"
-        description="Découvrez mes projets réalisés en développement web."
+        title="Fanatsy - Développeur Web | Réalisations"
+        description="Fanatsy, Développeur web basé à Valdivienne (Vienne; Poitiers et alentours), créations de sites web et applications modernes, adaptatifs et optimisés pour le SEO. Découvrez mes projets réalisés en développement web."
         url="https://fanatsy.dev/realisations"
       />
       

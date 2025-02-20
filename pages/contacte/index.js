@@ -4,8 +4,8 @@ export default function Contact() {
     return (
       <div className="min-h-screen text-white overflow-hidden">
         <SEOHead 
-        title="Contacte"
-        description="Contactez-moi pour discuter de votre projet web."
+        title="Fanatsy - Développeur Web | Contacte"
+        description="Fanatsy, Développeur web basé à Valdivienne (Vienne; Poitiers et alentours), créations de sites web et applications modernes, adaptatifs et optimisés pour le SEO. Contactez-moi pour discuter de votre projet web."
         url="https://fanatsy.dev/contacte"
       />
         

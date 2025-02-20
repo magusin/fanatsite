@@ -1,4 +1,4 @@
-import Head from 'next/head';
+import SEOHead from 'C/components/SEOHead';
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
@@ -20,11 +20,11 @@ export default function Home() {
 
   return (
     <div className="bg-gradient-to-b from-[#252525] via-[#18332a] to-[#2d655b] min-h-screen text-white">
-      <Head>
-        <title>Développeur web - Fanatsy</title>
-        <meta name="description" content="Développeur web basé à Valdivienne, crée des sites web et application modernes et optimisés pour le SEO. Découvrez mes créations et contactez-moi !" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-      </Head>
+      <SEOHead 
+        title="Fanatsy - Développeur Web"
+        description="Fanatsy, Développeur web basé à Valdivienne (Vienne; Poitiers et alentours), créations de sites web et applications modernes, adaptatifs et optimisés pour le SEO."
+        url="https://fanatsy.dev/"
+      />
 
       <main className="items-center px-4 sm:px-6 md:px-8">
         <div className="w-full flex flex-col items-center pt-10">
