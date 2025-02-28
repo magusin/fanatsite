@@ -16,12 +16,12 @@ export default function CGU() {
                 <section className="mb-12">
                     <h2 className="text-3xl font-bold text-green-400 mb-4">1. Introduction</h2>
                     <p className="text-gray-300 text-lg leading-relaxed">
-                        Les présentes Conditions Générales d’Utilisation régissent l’accès et l’utilisation du site <strong>Fanatsy</strong>, accessible à l’adresse
-                        <a href="https://fanatsy.dev" className="text-green-400 hover:underline">fanatsy.dev</a>.
+                        Les présentes Conditions Générales d’Utilisation régissent l’accès et l’utilisation du site <strong>Fanatsy</strong>, accessible à l’adresse 
+                        <a href="https://fanatsy.dev/" className="text-green-400 hover:underline"> https://fanatsy.dev/</a>.
                     </p>
                     <p className="text-gray-300 text-lg leading-relaxed mt-4">
-                        Le site est exploité par <strong>Hugo JACQUES</strong>, auto-entrepreneur domicilié à <strong>Valdivienne</strong>, immatriculé sous le numéro <strong>934 687 898</strong>
-                        et joignable à l’adresse e-mail suivante  :
+                        Le site est exploité par <strong>Hugo JACQUES</strong>, auto-entrepreneur domicilié à <strong>Valdivienne</strong>, immatriculé sous le numéro <strong> 934 687 898 </strong>
+                        et joignable à l’adresse e-mail suivante :
                         <a href="mailto:fanatsy.dev@gmail.com" className="text-green-400 hover:underline"> fanatsy.dev@gmail.com</a>.
                     </p>
                     <p className="text-gray-300 text-lg leading-relaxed mt-4">
